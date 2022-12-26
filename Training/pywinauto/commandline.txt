@@ -1,0 +1,9 @@
+>>> from pywinauto import application
+>>> app = application.Application()
+>>> app.start('notepad.exe')
+<pywinauto.application.Application object at 0x000001F0DFD8B070>
+>>> app.untitlednotepad.draw_outline()
+>>> app.untitlednotepad.menu_select("Edit -> Replace")
+>>> app.replace.cancel.click()
+>>> app.untitlednotepad.menu_select("File -> Exit")
+>>>

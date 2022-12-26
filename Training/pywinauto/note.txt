@@ -1,0 +1,9 @@
+#SELENIUM
+
+- scroll
+
+- action chains
+
+- Multiple windows (switch_to)
+
+- driver.quit / close 

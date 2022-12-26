@@ -1,0 +1,114 @@
+http://cookbook.seleniumacademy.com/Config.html
+
+Absolute XPath - 	   html/body/div/div/div/p/input
+Absolute XPath by Chrome - /html/body/div/div/div[1]/p[2]/input[1]
+Relative XPath by Chrome - //*[@id="tabs-1"]/p[2]/input[1]
+Relative XPath - 	   //input[@value='Petrol']
+
+Syntax	//tagName[@attribute='<value of that attribute>']
+
+
+chrome vs custom		custom
+absolute vs relative		relative
+---------------------
+
+AND	//p/input[@name='fuel_type'][@value='Petrol']
+AND	//p/input[@name='fuel_type' and @value='Petrol']
+OR	//p/input[@name='fuel_type' or @value='Petrol']
+------------------
+
+visble text //title[text()='Build my Car - Configuration']
+
+challenges:
+starts with
+contains
+ends with
+
+-------------
+id=Email123
+id=Email456
+id=Email693
+driver.findElement(By.id("Email123")
+
+Starts with - //option[starts-with(@id,'Email')]
+Starts with  //div[starts-with(@class,'ui-tabs')]
+for visible text - 
+Starts with //title[starts-with(text(), 'Build my Car -Configuration')]
+
+id=123Email693
+id=456Email693
+id=693Email693
+
+contains - //option[contains(@id,'Email')]
+contains - //div[contains(@class,'ui-tabs')]
+contains text - //title[contains(text(), 'Build my Car - Configuration')]
+
+ends with : not supported
+--------------
+//input[1] - Get me the first input element of the HTML page.
+
+//input[1]
+//input[2]
+//input[3]
+
+---------------------
+
+** Axis methods 
+
+* following-sibling and preceding-sibling
+
+//input[@type='checkbox' and @value='Airbags']   this is my locator
+
+syntax
+locator/following-sibling::tag-name
+locator/preceding-sibling::tag-name
+
+e.g.
+//input[@type='checkbox' and @value='Airbags']/following-sibling::input
+-----------------
+
+//input[@type='checkbox' and @value='Airbags']/following::input
+
+---
+//input[@type='checkbox' and @value='Airbags']/preceding-sibling::input
+
+
+//input[@type='checkbox' and @value='Airbags']/preceding::*
+//input[@type='checkbox' and @value='Airbags']/following::*
+-----------------------
+
+* parent  (immediate parent)
+
+locator/parent::tag-name  (gives immediate parent who should be tag-name)
+e.g. //input[@type='checkbox' and @value='Airbags']/parent::p
+
+* ancestor
+
+locator/ancestor::tag-name  (gives all ancestors who are tag-name)
+e.g.
+//input[@type='checkbox' and @value='Airbags']/ancestor::div
+//input[@type='checkbox' and @value='Airbags']/ancestor::div[last()]
+//input[@type='checkbox' and @value='Airbags']/ancestor::div[1]
+//input[@type='checkbox' and @value='Airbags']/ancestor::div[@class='demo']
+//input[@type='checkbox' and @value='Airbags']/ancestor::p  ancestor includes parent also
+--------------------------------
+
+* descendant
+
+locator/descendant::tag-name  (gives all descendants (child, grand child,...) who are tag-names)
+e.g.
+//div/descendant::input
+//p/descendant::input
+
+//div/descendant::input[@name='airbags']
+//div/descendant::input[last()]
+//div/descendant::input[1]
+//div/descendant::select[@name='make']
+
+
+
+
+
+--------------------
+/ - immediate child
+// - anywhere inside the element - sub node level (child, grandchild, grand grand child)

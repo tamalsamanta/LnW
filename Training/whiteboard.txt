@@ -1,0 +1,258 @@
+Selenium
+
+Selenium: 
+	Java
+	Python
+	...
+
+Appium:
+
+pywinauto:
+windows app
+Technology?	C++, C#, VB.NET, and XAML
+sample app?	
+
+-------------------------------
+21 23 28 29 30
+
+Python
+Pytest
+
+Selenium WebDriver
+-------------------------------
+RC	Depricated
+
+IDE		POC
+WebDriver	
+Grid
+
+different languages: Java, Python, Ruby, C#, ...
+
+different browsers: chrome, ie, edge, firefox, ...
+
+-------------
+interfaces
+
+Shape
+draw()	calc_area()
+
+classes
+
+Circle		Rectangle	Triangle
+
+------------
+breaks	accelerator  steering, ...
+
+
+interface	car
+breaks()	accelarate()		steering()
+
+Swift		swift dezire	Breeza		merc   		audi
+color
+number plate
+
+------------------------
+WebDriver	
+click		submit		type		
+
+Chrome Browser		Firefox Browser		Edge Browser
+(chromium)		(gecko)
+-------------------
+firefox and edge
+---------------
+
+verification
+if driver.title == "Google":
+   print("title matched")
+else:
+   print("title did not match")
+
+
+validation/ assertion
+assert driver.title == "Google", "Page title did not match"
+---------------------------------------- 
+
+Google Home Page
+---
+name	q
+
+id, name	default locators
+
+Browser		WebDriver
+Element		WebElement
+
+
+find element input box (search box)
+enter text "selenium"
+
+
+find element button
+click on it
+------------
+Browser commands
+click
+type
+
+back
+forward
+refresh
+maximize
+minimize
+close tab
+Quit
+
+
+new tab
+new window
+mouse hover
+double click
+switch to the tab
+capture some text from UI
+Alerts
+----------
+elements:
+input
+button	click submit
+checkbox
+radio button
+
+is_selected()
+
+radio button:
+petrol: worked
+disel: ?
+
+if name is duplicate, webdriver will give me the first element
+
+find_element()		WebElement
+find_elements()		List of WebElements
+
+---------------
+8 locators
+
+id
+name
+
+classname
+tagname  (e.g. p, div, a for link)		google home > links
+
+xpath
+csspath
+
+linktext		gmail
+partialtext		Inbox (658)
+
+---
+find_element()   # gives the first match
+find_elements()  # gives all the elements matching the criteria
+
+--------------------------
+
+challenges:
+1. try to resolve this warning:
+DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  driver = webdriver.Chrome("../resources/chromedriver.exe")
+2. run this code without providing the chromedriver.exe explicitly here.
+hint: env var
+
+
+-------------------------------------
+Assignments:
+1. find all the links on a google home page and 
+print the link text
+print the value of href
+print count of the links	len()
+hint: find_elements
+locator: tagname
+
+
+2. login.yahoo.com
+enter userid, password and login
+-------
+problem sovling
+
+======================================
+Day 2:
+locators: 8 
+
+xpath
+
+<html>
+ <head>
+ </head>
+ <body>
+   <div>
+      <div>
+          <p>
+ 	    <input>
+	    </input>
+	  </p>
+      </div>
+   </div>
+ </body>
+</html>
+
+grand parent	(ancestors)
+parent
+children	siblings
+grandchild	(decendents)
+
+
+
+-------------------
+Challenge:
+			  User		Selenium
+Browser 		> See		Nope
+
+Browser without UI	Faster execution of code
+
+Browser in Headless mode  (headless browser)
+
+*** Run google search script on chrome browser in headless mode
+------------------
+
+working with different elements: 
+dropdown
+
+3 ways to select the value
+by value
+by index
+by visible text
+
+
+multi select
+
+
+---------------------
+Assignment:
+1. drop down (make): create a list of expected values
+create a list of actual values. and comapre the lists
+
+2. try out this feature for multi-select as well.
+check and implement addtional features available for multi select.
+
+3. compose a new email, send it and then logout
+
+------------------------
+
+
+
+
+
+======================================
+Day 3:
+
+csspath
+webtable
+Synchronization
+action class
+switching and handling alerts, frames, window
+
+
+============================
+References:
+1. while installing selenium library use options
+--trusted-host pypi.org --trusted-host files.pythonhosted.org
+
+2. 
+

@@ -1,0 +1,57 @@
+Assignments:
+On samplepage.html
+
+Anchor element (link element – tag ‘a’) having ‘name’ as an attribute
+//a[@name]
+
+How many elements you got in above xpath and which one your selenium program will select
+
+
+Anchor element (link element ) having ‘name’ as an attribute having value ‘sectionB’
+
+
+Find ‘font’ element for which ‘color’ attribute contains ‘re’
+
+Find ‘font’ element for which ‘color’ attribute starts with ‘gre’
+
+Find unordered list element having an item for which id is ‘123’
+
+Find an element having id as ‘123’
+
+Find an element having either id = ‘stuff’ or name = ‘stuff’
+
+
+Find an element having ‘name’ attribute as ‘continue’ and ‘value’ attribute as ‘Clear’
+
+If there are multiple elements having same attribute then how to find the second element (as by default our program will take the first element)
+[2]
+
+Get the second element having ‘name’ attribute as ‘continue’
+
+Find an element(li tag) in an unordered(ul tag) list which contains ‘b’ in its visible text
+
+Find the following sibling ‘p’ of a ‘span’ element where span element containing visible text ‘4th’ 
+
+Find the first following sibling of any span element
+
+Find the second following sibling of span element
+
+Find a ‘span’ element which is preceding sibling of ‘p’ element
+
+Find the second child of an element having ‘id’ attribute as ‘textSection’
+
+Find the second child of a 'div' element having 'id' attribute as 'textSection'
+
+Find the first ‘p’ child of an element having ‘id’ attribute as ‘textSection’
+
+Find the last child of an element having ‘id’ attribute as ‘textSection’
+
+Find the last ‘p’ child of an element having ‘id’ attribute as ‘textSection’
+
+Any fourth child having ‘class’ attribute as ‘sales’ 
+
+3rd element of any parent where element contains ‘i’ in the ‘class’ attribute
+
+Find ‘b’ element inside a webtable (table tag) having ‘id’ attribute ‘TestTable’
+
+Disabled element on a page 
